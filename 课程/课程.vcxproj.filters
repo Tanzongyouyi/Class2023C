@@ -33,5 +33,8 @@
     <ClCompile Include="P32 循环语句while 1.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="P33循环语句while 2.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
