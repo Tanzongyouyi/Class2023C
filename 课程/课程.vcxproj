@@ -136,7 +136,8 @@
     <ClCompile Include="P31分支语句switch.c" />
     <ClCompile Include="P32 循环语句while 1.c" />
     <ClCompile Include="P33循环语句while 2.c" />
-    <ClCompile Include="循环语句for.c" />
+    <ClCompile Include="P34循环语句for.c" />
+    <ClCompile Include="P35循环语句for1.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
