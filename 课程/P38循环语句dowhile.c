@@ -42,9 +42,35 @@
 //	return 0;
 //}
 
-//练习三
+//练习三 二分法
 int main()
 {
+	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+	int sz = sizeof(arr) / sizeof(arr[0]);//元素个数
+	int k = 6;//要查找的数字
+	int left = 0;
+	int right = sz-1;//9
 
+	while (left <= right)
+	{
+		int mid = (left + right) / 2;
+		if (arr[mid] < k)
+		{
+			left = mid + 1;
+		}
+		else if (arr[mid > k])
+		{
+			right = mid - 1;
+		}
+		else
+		{
+			printf("找到了,下标是:%d\n", mid);
+			break;
+		}
+	}
+	if (left > right)
+	{
+		printf("找不到");
+	}
 	return 0;
 }
