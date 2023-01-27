@@ -138,6 +138,7 @@
     <ClCompile Include="P33循环语句while 2.c" />
     <ClCompile Include="P34循环语句for.c" />
     <ClCompile Include="P38循环语句dowhile.c" />
+    <ClCompile Include="P40循环语句dowhile2.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
