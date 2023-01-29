@@ -70,9 +70,29 @@ void menu()
 void game()
 {
 	//1.生成随机数
-	srand((unsigned int)time(NULL));
-	int ret = rand();//在这之前要先设置srand
+	int ret = rand()%100+1;//在这之前要先设置srand
+	//printf("%d\n", ret);
 	//2.猜数字
+	int guess = 0;
+	while (1)
+	{
+		printf("请猜数字");
+		scanf("%d", &guess);
+		if (guess < ret)
+		{
+			printf("猜小了\n");
+		}
+		else if (guess > ret)
+		{
+			printf("猜大了\n");
+		}
+		else
+		{
+			printf("恭喜你猜对了\n");
+			break;
+		}
+	}
+
 }
 int main()
 {
