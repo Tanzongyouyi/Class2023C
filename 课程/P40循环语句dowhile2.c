@@ -1,9 +1,9 @@
-#define _CRT_SECURE_NO_WARNINGS 1
-
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-#include <Windows.h>
+//#define _CRT_SECURE_NO_WARNINGS 1
+//
+//#include <stdlib.h>
+//#include <stdio.h>
+//#include <string.h>
+//#include <Windows.h>
 
 //练习4
 //int main()
@@ -59,63 +59,63 @@
 * 一个游戏一直玩，直到退出游戏
 */
 
-void menu()
-{
-	printf("####################\n");
-	printf("#     1.play       #\n");
-	printf("#     0.exit       #\n");
-	printf("####################\n");
-}
-
-void game()
-{
-	//1.生成随机数
-	int ret = rand()%100+1;//在这之前要先设置srand
-	//printf("%d\n", ret);
-	//2.猜数字
-	int guess = 0;
-	while (1)
-	{
-		printf("请猜数字");
-		scanf("%d", &guess);
-		if (guess < ret)
-		{
-			printf("猜小了\n");
-		}
-		else if (guess > ret)
-		{
-			printf("猜大了\n");
-		}
-		else
-		{
-			printf("恭喜你猜对了\n");
-			break;
-		}
-	}
-
-}
-int main()
-{
-	int input = 0;
-	srand((unsigned int)time(NULL));
-	do
-	{
-		menu();//打印一个菜单
-		printf("请选择\n");
-		scanf("%d", &input);
-		switch (input)
-		{
-		case 1:
-			game();
-			break;
-		case 0:
-			printf("退出游戏\n");
-			break;
-		default:
-			printf("选择错误\n");
-			break;
-		}
-
-	} while (input);
-	return 0;
-}
+//void menu()
+//{
+//	printf("####################\n");
+//	printf("#     1.play       #\n");
+//	printf("#     0.exit       #\n");
+//	printf("####################\n");
+//}
+//
+//void game()
+//{
+//	//1.生成随机数
+//	int ret = rand()%100+1;//在这之前要先设置srand
+//	//printf("%d\n", ret);
+//	//2.猜数字
+//	int guess = 0;
+//	while (1)
+//	{
+//		printf("请猜数字");
+//		scanf("%d", &guess);
+//		if (guess < ret)
+//		{
+//			printf("猜小了\n");
+//		}
+//		else if (guess > ret)
+//		{
+//			printf("猜大了\n");
+//		}
+//		else
+//		{
+//			printf("恭喜你猜对了\n");
+//			break;
+//		}
+//	}
+//
+//}
+//int main()
+//{
+//	int input = 0;
+//	srand((unsigned int)time(NULL));
+//	do
+//	{
+//		menu();//打印一个菜单
+//		printf("请选择\n");
+//		scanf("%d", &input);
+//		switch (input)
+//		{
+//		case 1:
+//			game();
+//			break;
+//		case 0:
+//			printf("退出游戏\n");
+//			break;
+//		default:
+//			printf("选择错误\n");
+//			break;
+//		}
+//
+//	} while (input);
+//	return 0;
+//}
