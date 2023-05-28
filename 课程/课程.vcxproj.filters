@@ -45,5 +45,8 @@
     <ClCompile Include="P40循环语句dowhile2.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="P43休息答疑.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
